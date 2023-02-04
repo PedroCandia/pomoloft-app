@@ -1,0 +1,7 @@
+{
+  "name": "pomoloft",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
