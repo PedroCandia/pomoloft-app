@@ -7,6 +7,17 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  commands = ['!abrazote', '!café', '!chiste', '!comandos', '!contest', '!crono', '!discord', 
+  '!emotes ffz', '!emotes bttv', '!emotes update', '!enter', '!estudio', '!excel', '!followage', '!giveaway', '!horario', '!items', '!jueves', '!kheylan', '!layani', '!leaderboard', 
+  '!leo', '!lunes', '!martes', '!merienda', '!mery', '!miércoles', '!next', '!points', '!recomendación', '!redeem', '!redes', '!rename', '!reyna', '!sandra', '!song', '!sueño', 
+  '!sunnie', '!sábado', '!tip', '!trol', '!troll', '!uptime', '!viernes', '!watchtime', '!when', '!williamartista', '!wordle', '!wrongsong', '!yanina'];
+
+  newCommands = [
+    { command: '!abrazote', src: '../../assets/commands/abrazote.png' },
+    { command: '!café', src: '../../assets/commands/cafe.png' },
+    { command: '!chiste', src: '../../assets/commands/chiste.png' },
+    { command: '!comandos', src: '../../assets/commands/comandos.png' },
+  ];
 
   constructor(private http: HttpClient) {}
 

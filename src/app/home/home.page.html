@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      POMOLOFT - ailingdev
+      POMOLOFT - PANEL
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,13 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col (click)="sendMessage('!discord')" style="cursor: pointer;">
-        <ion-card color="tertiary">
-          <ion-card-header>
-            <ion-card-title>!discord</ion-card-title>
-          </ion-card-header>
+      <ion-col size="6" size-md="4" size-lg="2" *ngFor='let command of newCommands'>
+        <ion-card (click)="sendMessage(command.command)">
+          <ion-img src="{{command.src}}"></ion-img>
         </ion-card>
+        <div style="width: 100%; justify-content: center; align-items: center; display: flex; ">
+          <ion-text>{{command.command}}</ion-text>
+        </div>
       </ion-col>
     </ion-row>
   </ion-grid>
