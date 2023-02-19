@@ -11,23 +11,41 @@ import { Subscription } from 'rxjs';
 export class HomePage implements OnInit, OnDestroy{
   public subscriber: Subscription;
   code: any;
-  
-  clientID = 'cvundls7pspmk73j6c64brqduhpz6i';
-  uri = 'http://localhost:8100/home';
-  // scope = 'user%3Aedit%20user%3Aread%3Aemail';
-  scope = 'user%3Aread%3Aemail%20user%3Aread%3Abroadcast%20channel%3Amanage%3Abroadcast%20channel%3Aread%3Aredemptions%20chat%3Aread%20channel%3Amoderate%20bits%3Aread%20channel_subscriptions%20channel%3Aread%3Asubscriptions%20channel%3Amanage%3Apredictions%20channel%3Amanage%3Apolls%20channel%3Aedit%3Acommercial%20channel%3Aread%3Acharity%20channel%3Aread%3Apaid_pinned_chat%20channel%3Aread%3Acheers%20moderator%3Aread%3Achatters&redirect_uri=https%3A%2F%2Fapi.streamelements.com%2Fauth%2Ftwitch%2Fcallback';
-
-  commands = ['!discord', '!emotes ffz', '!emotes bttv', '!emotes update', '!enter', '!estudio', '!excel', '!followage', '!giveaway', '!horario', '!items', '!jueves', '!kheylan', '!layani', '!leaderboard', 
-  '!leo', '!lunes', '!martes', '!merienda', '!mery', '!miércoles', '!next', '!points', '!recomendación', '!redeem', '!redes', '!rename', '!reyna', '!sandra', '!song', '!sueño', 
-  '!sunnie', '!sábado', '!tip', '!trol', '!troll', '!uptime', '!viernes', '!watchtime', '!when', '!williamartista', '!wordle', '!wrongsong', '!yanina'];
 
   // nopara, descanso
-  newCommands = [
+  commands = [
     { command: '!abrazote', src: '../../assets/commands/abrazote.png' },
     { command: '!café', src: '../../assets/commands/cafe.png' },
     { command: '!chiste', src: '../../assets/commands/chiste.png' },
     { command: '!comandos', src: '../../assets/commands/comandos.png' },
     { command: '!crono', src: '../../assets/commands/crono.png' },
+    { command: '!discord', src: '../../assets/commands/discord.png' },
+    { command: '!estudio', src: '../../assets/commands/estudio.png' },
+    { command: '!excel', src: '../../assets/commands/excel.png' },
+    { command: '!horario', src: '../../assets/commands/default.png' },
+    { command: '!lunes', src: '../../assets/commands/default.png' },
+    { command: '!martes', src: '../../assets/commands/default.png' },
+    { command: '!miércoles', src: '../../assets/commands/default.png' },
+    { command: '!jueves', src: '../../assets/commands/default.png' },
+    { command: '!viernes', src: '../../assets/commands/default.png' },
+    { command: '!sábado', src: '../../assets/commands/default.png' },
+    { command: '!kheylan', src: '../../assets/commands/default.png' },
+    { command: '!layani', src: '../../assets/commands/default.png' },
+    { command: '!leo', src: '../../assets/commands/default.png' },
+    { command: '!reyna', src: '../../assets/commands/default.png' },
+    { command: '!merienda', src: '../../assets/commands/default.png' },
+    { command: '!mery', src: '../../assets/commands/default.png' },
+    { command: '!recomendación', src: '../../assets/commands/default.png' },
+    { command: '!redes', src: '../../assets/commands/default.png' },
+    { command: '!sandra', src: '../../assets/commands/default.png' },
+    { command: '!sueño', src: '../../assets/commands/default.png' },
+    { command: '!sunnie', src: '../../assets/commands/default.png' },
+    { command: '!tip', src: '../../assets/commands/default.png' },
+    { command: '!trol', src: '../../assets/commands/default.png' },
+    { command: '!troll', src: '../../assets/commands/default.png' },
+    { command: '!williamartista', src: '../../assets/commands/default.png' },
+    { command: '!wordle', src: '../../assets/commands/default.png' },
+    { command: '!yanina', src: '../../assets/commands/default.png' },
   ];
 
   constructor(private http: HttpClient, private route: ActivatedRoute) {}
