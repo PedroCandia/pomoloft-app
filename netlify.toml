@@ -1,9 +1,6 @@
-[build]
-  command = "npm run build"
-  publish = "/build"
-  base ="/"
-
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/home"
+  to = "https://pomoloft.netlify.app/home"
   status = 200
+  force = true
+  headers = {X-From = "Netlify"}
