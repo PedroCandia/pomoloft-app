@@ -7,11 +7,9 @@
 </ion-header>
 
 <ion-content>
-  <a href="https://id.twitch.tv/oauth2/authorize?response_type=code&client_id={{clientID}}&redirect_uri={{uri}}&scope={{scope}}">Connect with Twitch</a>
-
   <ion-grid>
     <ion-row>
-      <ion-col size="6" size-md="4" size-lg="2" *ngFor='let command of newCommands' style="cursor: pointer;">
+      <ion-col size="6" size-md="4" size-lg="2" *ngFor='let command of commands' style="cursor: pointer;">
         <ion-card (click)="sendMessage(command.command)">
           <ion-img src="{{command.src}}"></ion-img>
         </ion-card>
